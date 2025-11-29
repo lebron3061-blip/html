@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/phosphor-icons/web@2.1.1/src/fill/style.css">
     <title>NUI React Boilerplate</title>
-    <script type="module" crossorigin="" src="./assets/index.b957513f.js"></script>
+    <script type="module" crossorigin src="./assets/index.b957513f.js"></script>
     <link rel="stylesheet" href="./assets/index.b284bac3.css">
-    <style data-emotion="css-global" data-s=""></style>
-    <style data-emotion="css-global" data-s=""></style>
+
+    <style>
+        :root {
+            --menu-color: 0, 102, 255;
+        }
+        .PTabs > div[style*="rgba(200, 0, 0"] {
+            background-color: rgba(0, 102, 255, 0.6) !important;
+            border: 0.052vw solid rgb(0, 102, 255) !important;
+            box-shadow: rgb(0, 102, 255) 0vw 0vw 0.2083vw 0.0339vw !important;
+        }
+    </style>
 </head>
 <body>
     <div id="root" style="background-image: url(); background-size: cover; background-repeat: no-repeat; background-position: center center;">
@@ -33,15 +42,15 @@
                             <div class="PCategory active">Main Menu</div>
                         </div>
                         <div class="PTabs">
-                            <div style="position: absolute; width: 100%; top: 0vw; height: 1.5625vw; background-color: rgba(200, 0, 0, 0.6); border: 0.052vw solid rgb(200, 0, 0); border-radius: 0.3083vw; box-shadow: rgb(200, 0, 0) 0vw 0vw 0.2083vw 0.0339vw; z-index: 0; transition: top 200ms, height 120ms; pointer-events: none;"></div>
+                            <div style="position: absolute; width: 100%; top: 0vw; height: 1.5625vw; background-color: rgba(200, 0, 0, 0.6); border: 0.052vw solid rgb(200, 0, 0); border-radius: 0.3083vw; box-shadow: rgb(200, 0 0) 0vw 0vw 0.2083vw 0.0339vw; z-index: 0; transition: top 200ms, height 120ms; pointer-events: none;"></div>
                             <div class="PTab active"><span class="PTLabel">Player</span><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="PTab "><span class="PTLabel">Weapon</span><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="PTab "><span class="PTLabel">Server</span><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="PTab "><span class="PTLabel">Combat</span><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="PTab "><span class="PTLabel">Vehicle</span><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="PTab "><span class="PTLabel">Visual</span><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="PTab "><span class="PTLabel">Miscellaneous</span><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="PTab "><span class="PTLabel">Settings</span><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="PTab"><span class="PTLabel">Weapon</span><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="PTab"><span class="PTLabel">Server</span><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="PTab"><span class="PTLabel">Combat</span><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="PTab"><span class="PTLabel">Vehicle</span><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="PTab"><span class="PTLabel">Visual</span><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="PTab"><span class="PTLabel">Miscellaneous</span><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="PTab"><span class="PTLabel">Settings</span><i class="fa-solid fa-angle-right"></i></div>
                         </div>
                         <div class="PFooter">
                             <span class="PBuild">Bypass (Beta)</span>
@@ -51,7 +60,9 @@
                 </div>
             </div>
         </div>
+
         <div class="NotificationsWrapper"></div>
+
         <div class="KBLWrapper" style="transition-property: opacity; transition-duration: 500ms; transition-timing-function: ease; opacity: 1;">
             <div class="Header">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fe Icon" width="16" height="16" viewBox="0 0 24 24">
@@ -78,25 +89,28 @@
                 </div>
             </div>
         </div>
+
         <img class="Crosshair" src=" " draggable="false">
+
         <div class="FCWrapper" style="transition-property: opacity; transition-duration: 300ms; transition-timing-function: ease; opacity: 1;">
             <div class="Option Selected" style="opacity: 1;">Default</div>
-            <div class="Option " style="opacity: 0.9;">Teleport</div>
-            <div class="Option " style="opacity: 0.8;">Shoot Weapon</div>
-            <div class="Option " style="opacity: 0.7;">Kick from Vehicle</div>
-            <div class="Option " style="opacity: 0.6;">Hijack Vehicle</div>
-            <div class="Option " style="opacity: 0.5;">Delete Vehicle</div>
+            <div class="Option" style="opacity: 0.9;">Teleport</div>
+            <div class="Option" style="opacity: 0.8;">Shoot Weapon</div>
+            <div class="Option" style="opacity: 0.7;">Kick from Vehicle</div>
+            <div class="Option" style="opacity: 0.6;">Hijack Vehicle</div>
+            <div class="Option" style="opacity: 0.5;">Delete Vehicle</div>
         </div>
     </div>
 
-    <!-- THIS IS THE ONLY CHANGE - THEME SWITCHER -->
     <script>
         window.addEventListener("message", function(event) {
             if (event.data.action === "setColor") {
                 document.documentElement.style.setProperty('--menu-color', `${event.data.r}, ${event.data.g}, ${event.data.b}`);
             }
         });
+        document.documentElement.style.setProperty('--menu-color', '0, 102, 255');
     </script>
 
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a239b2c6e63d925',t:'MTc2Mzc2Mzk1OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a239b2c6e63d925',t:'MTc2Mzc2Mzk1OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
 </html>
