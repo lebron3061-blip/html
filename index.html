@@ -88,12 +88,15 @@
             <div class="Option " style="opacity: 0.5;">Delete Vehicle</div>
         </div>
     </div>
+
+    <!-- THIS IS THE ONLY CHANGE - THEME SWITCHER -->
+    <script>
+        window.addEventListener("message", function(event) {
+            if (event.data.action === "setColor") {
+                document.documentElement.style.setProperty('--menu-color', `${event.data.r}, ${event.data.g}, ${event.data.b}`);
+            }
+        });
+    </script>
+
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a239b2c6e63d925',t:'MTc2Mzc2Mzk1OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
-
-
-
-
-
-
